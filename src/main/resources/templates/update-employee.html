@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link th:href="@{/css/update-employee.css}" rel="stylesheet" />
+    <title>Update Employee</title>
+</head>
+<body th:style="'background-image: url(' + @{/images/key.jpg} + ');   background-repeat: no-repeat; background-position: center center;  background-attachment: fixed; /* '">
+	<div class="form-container">
+		<h2>Update Employee</h2>
+
+		<!-- eey page first time load akkumbo thanne  they will call getters method. gettersmethodvech data ellam populate cheyum orro input field lum -->
+
+		<!-- Fixed th:object syntax and form action -->
+		<form th:action="@{/save-employee}" th:object="${employee}"
+			method="POST">
+
+			<!-- add hidden field to handle update -->
+			<input type="hidden" th:field="*{id}" /> <label for="fname">First
+				Name</label> <input type="text" th:field="*{firstName}" id="fname"
+				name="firstName"> <label for="lname">Last Name</label> <input
+				type="text" th:field="*{lastName}" id="lname" name="lastName">
+
+			<label for="email">E-mail</label> <input type="email"
+				th:field="*{email}" id="email" name="email">
+
+			<div class="button-group">
+				<button type="submit" class="button">Update</button>
+				<a th:href="@{/}" class="button back-button">Back to List</a>
+			</div>
+
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+
+.custom-yellow-btn{
+	background-color: #f6d32d;
+	color:white;
+	 padding: 10px 20px;
+  border-radius: 29px;
+  font-weight: bold;
+	
+}
+body{
+	background-color:#F9F6EE;
+	
+
+}
+
+
+.custom-green-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 29px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.custom-red-btn {
+  background-color: #f43131;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 29px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+body {
+  background-color: #F9F6EE;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
